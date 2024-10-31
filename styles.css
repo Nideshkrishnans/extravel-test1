@@ -1,0 +1,172 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.mainBody{
+  height: 100vh;
+}
+
+.mainImage{
+  height: 100%;
+  background-image: url('./images/Bodrum_turkey_alexandr-popadin-H-hYPT_Src-unsplash-433x650.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  width: 100%;
+}
+
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+
+.signup {
+  text-align: center;
+}
+
+.link{
+  text-decoration: none;
+}
+
+
+.bottom-logo {
+  display: none;
+}
+.bottom-items{
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .bottom-logo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    width: 100%;
+    color: rgb(105,64,255);
+  }
+ .logo{
+  display: none;
+ }
+  .mainImage {
+    display: none;
+  }
+  .container {
+    max-width: 90%;
+  }
+  .smfont{
+    font-size: x-small;
+  }
+}
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+.profile-container { 
+  display: flex; 
+  align-items: center; 
+  position: relative; 
+} 
+
+.profile-pic { 
+  width: 35px; 
+  height: 35px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+  margin-left: -15px; 
+}
+
+.passwordinput img{
+  width: 35px;
+  cursor: pointer;
+}
+
+#password{
+  background-color: rgb(248,249,250);
+}
+
+#email{
+  background-color: rgb(248,249,250);
+}
+
+
+
+@media (min-width:769px) {
+  .smfont{
+    font-size: small ;
+  }
+}
